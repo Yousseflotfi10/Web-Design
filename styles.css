@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+@page{
+	size:800px 980px;
+}
+
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote, article, header, footer, main, nav {
+padding: 0px;
+margin: 0px;
+font-size: 100%;
+font-weight: normal;
+}
+
+h1 {
+	font-size: 200%;
+	margin: 10px;
+	font-family:sans-serif;
+	font-style:normal;
+	padding: 10px;
+}
+
+h2 {
+	padding-left: 20px;
+	color: #9B9596;
+}
+
+header {
+	align-content: flex-end;
+}
+
+nav {
+	list-style-type: none;
+  	margin: 10px 2px 10px 0px;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+	text-align:center;
+	font-size:16px;
+	line-height:20px;
+	}
+nav li{
+	float: left;
+}
+
+
+nav a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+
+footer {
+	color: #AFAFAF;
+	background-color: antiquewhite
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	float:inherit;
+}
+
+.headimg {
+	float: inherit;
+	
+}
+.tableimg {
+	float: left;
+	clear:left;
+	clear: none;
+	padding:25px;
+	
+}
+.tablename {
+	text-align: center;
+	clear: none;
+	padding:25px;
+	
+}
+
+tbody{
+	border: 1px solid black;
+	border-collapse:collapse;
+	margin: auto;
+	border-style: groove
+}
+
+table,th, td
+{
+    border: 1px solid black;
+	border-style: groove
+}
+.introcontent {
+	margin: auto;
+	padding: 5px;
+}
+.introcontent::first-letter{
+	font-size: 200%;
+	color: #252525;
+}
+.refer {
+	padding: 0px;
+	font-style: italic;
+}
+.videoref {
+	font-style: italic;
+}
+.indexvideo {
+	width: 400px;
+	height: auto;
+}
+.curr {
+	background-color: #04AA6D;
+}
+
+.table320 {
+width:80%;
+text-align:center;
+background-color:#999999;
+border-spacing:2px;
+padding:3px;
+margin:3px auto;
+}
+.table320 th {
+width:40%;
+font-weight: normal;
+text-align: right;
+padding-right: 20px;
+padding-left: 40px;
+background-color:#E8E8E8;
+font-size:14px;
+}
+.table320 td {
+width:60%;
+font-weight: normal;
+text-align: left;
+padding-left: 10px;
+background-color: #E0E0E0;
+}
+.table320 td label {white-space:nowrap;}
