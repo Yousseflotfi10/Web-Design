@@ -8,7 +8,7 @@ $send_to = "Daniel White<dfw34@scarletmail.rutgers.edu>";
 $send_cc = array(); 
 
 // Step 2. Write a subject of the e-mail.
-$subject = "Information from the Sample Form for the Web Design Course";
+$subject = "Favorite Cars Fan Form!";
 
 // Allowed Referrers. Should be empty or list of domains
 $referrers = array(); 
@@ -35,13 +35,12 @@ $redirect_url = 'success.html';
 
 $autoresponder_enabled = 1;
 $autoresponder_from = $send_to;
-$autoresponder_subject = "Thank You for Filling Out the Sample Form for the Web Design Course!";
+$autoresponder_subject = "Thanks for your feedback! Happy driving";
 $autoresponder_message = <<<MSG
 Dear %name_from%,
 
-Thank you for filling out the Sample Form for the Web Design Course.
-
-We will contact you shortly.
+Thank you for your input on our car website,
+we will use the feedback of you and other to make sure we are always improving!
 
 MSG;
 
