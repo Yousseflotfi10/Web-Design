@@ -1,111 +1,73 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../styles.css">
+	<script src="getCollection.js"></script>
+	<title>Form</title>
+</head>
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="A Sample form that forwards information to an e-mail">
-		<meta name="author" content="Your Name">
-
-		<title>Patriots Fan Form</title>
-
-		<link rel="stylesheet" href="styles.css" />
-		
-		<script src="submission.js"></script>
-
-	</head>
-
-	<body>
-		
-		<header>
-			<h1>Tell us about your favorite cars!</h1>
-		</header>
-
-		<main>
-    
-			<form name="request" enctype="multipart/form-data" method="post" action="processing.php" onsubmit="submission_alert()">
+<body onload="draw_form();">
+	<h1>Form</h1>
+		<h2>Chinese New Year Dates in 2022</h2>
+		<nav>
+		   <ul>
+			   <li><a href="../index.html">Main Page</a></li>
+			   <li><a href="../introduction.html">Introduction</a></li>
+			   <li><a href="../dates.html">Dates</a></li>
+			   <li><a href="../traditions.html">Traditions</a></li>
+			   <li><a href="../reference.html">Reference</a></li>
+			   <li><a class="curr">Form</a></li>
+		  </ul>
+		</nav>
+	<h1>Who are you</h1>
+	<h2>Please fill the form to tell me who you are :D</h2>
+	
+	<form id="myForm" name="request" enctype="multipart/form-data" method="post" action="../processing.php" onsubmit="submission_alert()">
    	
-				<table class="cars_form">
+				<table class="table320">
 				
 					<tr>
-						<th>Your Name (Required)</th>
-						<td><input type="text" name="name_from" value="" size="25" placeholder="Please enter your name." required /></td>
+						<th>Your Name (Optional)</th>
+						<td><input type="text" name="name_from" value="" size="25" placeholder="Please enter your name." /></td>
 					</tr>
-
 					<tr>
-						<th>Email (Required)</th>
-						<td><input type="email" name="email_from" value="" size="30" placeholder="Please enter your e-mail." required /></td>
-					</tr>
-
-					<tr>
-						<th>Favorite Car</th>
-						<td><input type="text" name="textline" value="" size="50" placeholder="favorite car" required /></td>
-					</tr>
-				
-					<tr>
-						<th>Age</th>
-						<td><input type="text" name="textline_optional" value="" size="50" placeholder="Please enter some text." /></td>
-					</tr>
-				
-					<tr>
-						<th>Favorite car brand(among these options):</th>
+						<th>Which car do you like? (Required)</th>
 						<td>
-							<select name="dropdown" required>
-								<option value="" style="color:#555555">Please Select</option>
-								<option value="1">Mclaren</option>
-								<option value="2">Toyota</option>
-								<option value="3">Mercedes</option>
-								<option value="4">WIP</option>
-							</select>
+							<label><input type="radio" name="radio" value="1" required />College Avenue</label>
+							<label><input type="radio" name="radio" value="2" required />Livingston</label>
+							<label><input type="radio" name="radio" value="3" required />Busch</label>
+							<label><input type="radio" name="radio" value="4" required />Douglass</label>
 						</td>
 					</tr>
 
 					<tr>
-						<th>Are there other cars you would like to see on the website?</th>
+						<th>What proably will be your graduate year?</th>
 						<td>
-							<label><input type="radio" name="radio" value="1" required />Yes</label>
-							<label><input type="radio" name="radio" value="2" required />No</label>
+							<label><input type="checkbox" name="checkbox_1" value="Selected" />2022</label>
+							<label><input type="checkbox" name="checkbox_2" value="Selected" />2023</label>
+							<label><input type="checkbox" name="checkbox_3" value="Selected" />2024</label>
+							<label><input type="checkbox" name="checkbox_4" value="Selected" />2025</label>
 						</td>
 					</tr>
 
 					<tr>
-						<th>Check any cars you would like to see in addition to what we have:</th>
-						<td>
-							<label><input type="checkbox" name="Option 1" value="Selected" />Aston Martin</label>
-							<label><input type="checkbox" name="Option 2" value="Selected" />Ford</label>
-							<label><input type="checkbox" name="Option 3" value="Selected" />Dodge</label>
-							<label><input type="checkbox" name="Option 4" value="Selected" />Lamborghini</label>
-							<label><input type="checkbox" name="Option 5" value="Selected" />Chevrolet</label>
-						</td>
-					</tr>
-
-					<tr>
-						<th>Name any other cars/manufacturers you would like to see!</th>
-						<td><textarea name="textarea" cols="45" rows="5" placeholder="Please enter some text." required></textarea></td>
-					</tr>
-
-					<tr>
-						<th>Send us videos of your favorite cars!</th>
-						<td><input type="file" name="file" /></td>
+						<th>Anything to say?</th>
+						<td><textarea name="textarea" cols="45" rows="5" placeholder="Please enter some text."></textarea></td>
 					</tr>
 			
 					<tr>
 						<td colspan="2" style="background-color:#FFFFFF; text-align:center;">
+							<input type="reset" value="Reset" style="width:100px; margin:0px;" />
 							<input type="submit" value="Submit" style="width:100px; margin:0px;" />
 						</td>
 					</tr>
 
 				</table>
-			
-			</form>
-
-		</main>
-		
-		<footer>
-			<address>
-				<a href="mailto:dfw34@scarletmail.rutgers.edu">Email me!</a>
-			</address>
-		</footer>
-	</body>
-
+		</form>
+	<input type="button" name="button" id="button" value="提交" onClick="displayTable.php">
+	<div id="showform" onLoad="draw_form()"></div>
+	
+	
+</body>
 </html>
