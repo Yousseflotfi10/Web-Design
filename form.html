@@ -3,13 +3,6 @@
 <html lang="en">
 
 	<head>
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
 		<meta charset="utf-8">
 		<meta name="description" content="A Sample form that forwards information to an e-mail">
 		<meta name="author" content="Your Name">
@@ -23,39 +16,16 @@
 	</head>
 
 	<body>
-		<nav>
-		<ul>
-			<li>
-				<a href="index.html">Home Page</a>
-			</li>
 		
-			<li>
-				<a href="history.html">History</a>
-			</li>
-			<li>
-				<a href="photo_gallery.html">Gallery</a>
-			</li>
-			<li>
-				<a href="MVPs.html">MVPs</a>
-			</li>
-			<li>
-				<a href="HOF.html">Hall of Fame</a>
-			</li>
-			<li>
-				Patriots Fan Form
-			</li>
-		</ul>
-		</nav>
-
 		<header>
-			<h1>Tell me your favorite Patriots players!</h1>
+			<h1>Tell us about your favorite cars!</h1>
 		</header>
 
 		<main>
     
 			<form name="request" enctype="multipart/form-data" method="post" action="processing.php" onsubmit="submission_alert()">
    	
-				<table class="table320">
+				<table class="cars_form">
 				
 					<tr>
 						<th>Your Name (Required)</th>
@@ -68,8 +38,8 @@
 					</tr>
 
 					<tr>
-						<th>Favorite Team</th>
-						<td><input type="text" name="textline" value="" size="50" placeholder="Please enter some text." required /></td>
+						<th>Favorite Car</th>
+						<td><input type="text" name="textline" value="" size="50" placeholder="favorite car" required /></td>
 					</tr>
 				
 					<tr>
@@ -78,46 +48,44 @@
 					</tr>
 				
 					<tr>
-						<th>Favorite players(among these options):</th>
+						<th>Favorite car brand(among these options):</th>
 						<td>
 							<select name="dropdown" required>
 								<option value="" style="color:#555555">Please Select</option>
-								<option value="1">Tom Brady</option>
-								<option value="2">Rob Gronkowski</option>
-								<option value="3">Julian Edelman</option>
-								<option value="4">Mac Jones</option>
-								<option value="5">Devin McCourty</option>
+								<option value="1">Mclaren</option>
+								<option value="2">Toyota</option>
+								<option value="3">Mercedes</option>
+								<option value="4">WIP</option>
 							</select>
 						</td>
 					</tr>
 
 					<tr>
-						<th>Do you think Brady was going to go to the Dolphins?</th>
+						<th>Are there other cars you would like to see on the website?</th>
 						<td>
 							<label><input type="radio" name="radio" value="1" required />Yes</label>
 							<label><input type="radio" name="radio" value="2" required />No</label>
-							<label><input type="radio" name="radio" value="3" required />Who knows at this point</label>
 						</td>
 					</tr>
 
 					<tr>
-						<th>Check what applies to you:</th>
+						<th>Check any cars you would like to see in addition to what we have:</th>
 						<td>
-							<label><input type="checkbox" name="Option 1" value="Selected" />I think Mac Jones is the next GOAT</label>
-							<label><input type="checkbox" name="Option 2" value="Selected" />I am pissed that Brady left</label>
-							<label><input type="checkbox" name="Option 3" value="Selected" />Coach Belichik is the greatest coach all time</label>
-							<label><input type="checkbox" name="Option 4" value="Selected" />The Patriots are going to the playoffs this year</label>
-							<label><input type="checkbox" name="Option 5" value="Selected" />The Patriots will win the Super Bowl this year</label>
+							<label><input type="checkbox" name="Option 1" value="Selected" />Aston Martin</label>
+							<label><input type="checkbox" name="Option 2" value="Selected" />Ford</label>
+							<label><input type="checkbox" name="Option 3" value="Selected" />Dodge</label>
+							<label><input type="checkbox" name="Option 4" value="Selected" />Lamborghini</label>
+							<label><input type="checkbox" name="Option 5" value="Selected" />Chevrolet</label>
 						</td>
 					</tr>
 
 					<tr>
-						<th>What Patriots topics would you like to see on the website?</th>
+						<th>Name any other cars/manufacturers you would like to see!</th>
 						<td><textarea name="textarea" cols="45" rows="5" placeholder="Please enter some text." required></textarea></td>
 					</tr>
 
 					<tr>
-						<th>Attatch fan video if you want a chance to be on the site!</th>
+						<th>Send us videos of your favorite cars!</th>
 						<td><input type="file" name="file" /></td>
 					</tr>
 			
