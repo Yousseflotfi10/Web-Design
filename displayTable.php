@@ -23,8 +23,8 @@
 			$db_server = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
 			if (!$db_server) die("Unable to connect to MySQL: " . mysql_error());
 
-    	        	$raw_results = mysqli_query($db_server, "SELECT * FROM Collectdata") or die(mysql_error());
-		      // "Collectdata" is the name of our table
+    	        	$raw_results = mysqli_query($db_server, "SELECT * FROM Cardata") or die(mysql_error());
+		      // "Cardata" is the name of our table
 		      // * means that we select all fields.
 		               
 		      if(mysqli_num_rows($raw_results) > 0){ // If one or more rows are returned, do following:

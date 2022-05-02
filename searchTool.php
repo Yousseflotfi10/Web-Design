@@ -38,8 +38,8 @@
 		//        $query = mysql_real_escape_string($query);
 		        // makes sure nobody uses SQL injection
         
-		        $raw_results = mysqli_query($db_server, "SELECT * FROM Collectdata WHERE (username LIKE '%".$query."%') OR (email LIKE '%".$query."%') OR (car LIKE '%".$query."%') OR (age LIKE '%".$query."%') OR (Brand LIKE '%".$query."%') OR (additionchoice LIKE '%".$query."%') OR (ExtraText LIKE '%".$query."%')") OR die(mysql_error());
-		        // "Collectdata" is the name of our table
+		        $raw_results = mysqli_query($db_server, "SELECT * FROM Cardata WHERE (username LIKE '%".$query."%') OR (email LIKE '%".$query."%') OR (car LIKE '%".$query."%') OR (age LIKE '%".$query."%') OR (Brand LIKE '%".$query."%') OR (additionchoice LIKE '%".$query."%') OR (ExtraText LIKE '%".$query."%')") OR die(mysql_error());
+		        // "Cardata" is the name of our table
 		        // * means that we select all fields.
 		        // '%$query%' is the search term. % means "anything."
 		        // If you want exact match, you need to use title='$query'
