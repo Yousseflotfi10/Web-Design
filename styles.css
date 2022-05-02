@@ -5,7 +5,7 @@
 }
 
 
-html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote, article, header, footer, main, nav {
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote, article, header, footer, main, nav, p, table, script, video,iframe{
 padding: 0px;
 margin: 0px;
 font-size: 100%;
@@ -13,10 +13,11 @@ font-weight: normal;
 }
 
 h1 {
-	font-size: 200%;
+	font-size: 60px;
 	margin: 10px;
 	font-family:sans-serif;
 	font-style:normal;
+	text-align: center;
 	padding: 10px;
 }
 
@@ -36,14 +37,16 @@ nav {
   	overflow: hidden;
   	background-color: #333;
 	text-align:center;
-	font-size:16px;
+	font: size 32px;
 	line-height:20px;
 	}
 nav li{
-	float: left;
+	float: center;
 }
 
-
+script{
+	font-size: 32px;
+}
 nav a {
 	display: block;
 	color: white;
@@ -72,12 +75,16 @@ footer {
 	clear:left;
 	clear: none;
 	padding:25px;
+	margin: auto;
 	
 }
 .tablename {
 	text-align: center;
 	clear: none;
 	padding:25px;
+	padding-left: auto;
+	padding-right: auto;
+	margin: auto;
 	
 }
 
@@ -86,21 +93,21 @@ tbody{
 	border-collapse:collapse;
 	margin: auto;
 	border-style: groove
+	padding-left: auto;
+	padding-right: auto;
+	margin: auto;
 }
 
 table,th, td
 {
     border: 1px solid black;
-	border-style: groove
-}
-.introcontent {
+	border-style: groove;
+	font-size: 40px;
+	padding-left: auto;
+	padding-right: auto;
 	margin: auto;
-	padding: 5px;
 }
-.introcontent::first-letter{
-	font-size: 200%;
-	color: #252525;
-}
+
 .refer {
 	padding: 0px;
 	font-style: italic;
@@ -123,6 +130,10 @@ background-color:#999999;
 border-spacing:2px;
 padding:3px;
 margin:3px auto;
+
+padding-left: auto;
+padding-right: auto;
+margin: auto;
 }
 .table320 th {
 width:40%;
@@ -132,6 +143,7 @@ padding-right: 20px;
 padding-left: 40px;
 background-color:#E8E8E8;
 font-size:14px;
+margin: auto;
 }
 .table320 td {
 width:60%;
@@ -139,5 +151,66 @@ font-weight: normal;
 text-align: left;
 padding-left: 10px;
 background-color: #E0E0E0;
+margin: auto;
 }
 .table320 td label {white-space:nowrap;}
+
+li{
+	padding-top: 50px;
+	font-size: 24px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #c71818;
+	text-align: center;
+	margin: auto;
+}
+
+img {
+   
+    width:  750px;
+    height: 500px;	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+p {
+	padding-left: 300px;
+	padding-right: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	font-size: 24px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #000000;
+
+}
+
+h2{
+	font-size: 32px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-align: center;
+	padding-top: 50px;
+
+}
+h3{
+	font-size: 24px;
+	text-align: center;
+	padding-top: 50px;
+}
+video{
+	width: 750px;
+	height: 500px;
+	display:block;
+	padding-left: auto;
+	padding-right: auto;
+	margin:auto
+}
+iframe{
+	width: 750px;
+	height: 500px;
+	display:block;
+	padding-left: auto;
+	padding-right: auto;
+	margin: auto;
+}

@@ -7,3 +7,4 @@ if ((hour >= 17) && (hour <= 21)) {greeting = "Good evening!";}
 if ((hour == 22) || (hour == 23)) {greeting = "Almost bed time...";}
 if (hour == 0) {greeting = "It's past midnight! Bed time!";}
 document.write(greeting);
+
